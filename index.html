@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SonicPro X1 - Wireless Headphones</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">SonicPro</h2>
+
+            <div class="nav-links">
+                <a href="#product">Product</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <div class="cart">
+                🛒 Cart: <span id="cartCount">0</span>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Product Section -->
+    <main id="product">
+
+        <section class="product-container">
+
+            <!-- Product Image -->
+            <div class="product-image">
+
+                <span class="discount-badge">25% OFF</span>
+
+                <img
+                    id="productImage"
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+                    alt="Wireless Headphones"
+                >
+
+            </div>
+
+
+            <!-- Product Information -->
+            <div class="product-info">
+
+                <p class="category">WIRELESS AUDIO</p>
+
+                <h1>SonicPro X1 Wireless Headphones</h1>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>4.8 (245 Reviews)</span>
+                </div>
+
+
+                <!-- Price -->
+                <div class="price-section">
+
+                    <span class="current-price" id="unitPrice">
+                        ৳4,499
+                    </span>
+
+                    <span class="old-price">
+                        ৳5,999
+                    </span>
+
+                    <span class="discount">
+                        25% OFF
+                    </span>
+
+                </div>
+
+
+                <!-- Description -->
+                <p class="description">
+                    Experience powerful sound with SonicPro X1 Wireless
+                    Headphones. It comes with active noise cancellation,
+                    comfortable ear cushions and a long-lasting battery.
+                </p>
+
+
+                <!-- Features -->
+                <div class="features">
+
+                    <div>✓ Active Noise Cancellation</div>
+                    <div>✓ 40 Hours Battery Life</div>
+                    <div>✓ Bluetooth 5.3</div>
+                    <div>✓ Fast Charging</div>
+
+                </div>
+
+
+                <!-- Color -->
+                <div class="option-section">
+
+                    <h3>
+                        Color:
+                        <span id="selectedColor">Black</span>
+                    </h3>
+
+                    <div class="colors">
+
+                        <button
+                            class="color black active"
+                            data-color="Black">
+                        </button>
+
+                        <button
+                            class="color white"
+                            data-color="White">
+                        </button>
+
+                        <button
+                            class="color blue"
+                            data-color="Blue">
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quantity -->
+                <div class="quantity-section">
+
+                    <h3>Quantity</h3>
+
+                    <div class="quantity-box">
+
+                        <button id="minusBtn">−</button>
+
+                        <span id="quantity">1</span>
+
+                        <button id="plusBtn">+</button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Total -->
+                <div class="total">
+
+                    Total:
+                    <strong id="totalPrice">৳4,499</strong>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <button id="cartBtn" class="cart-btn">
+                        🛒 Add to Cart
+                    </button>
+
+                    <button id="buyBtn" class="buy-btn">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Confirmation -->
+                <div id="message" class="message"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Reviews -->
+        <section id="reviews" class="section">
+
+            <h2>Customer Reviews</h2>
+
+            <div class="review-container">
+
+                <div class="review-card">
+
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+
+                    <h3>Great Sound Quality</h3>
+
+                    <p>
+                        The sound quality is amazing and the headphones
+                        are very comfortable.
+                    </p>
+
+                    <strong>— Rahim</strong>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+
+                    <h3>Excellent Battery</h3>
+
+                    <p>
+                        Battery lasts for a long time. Perfect for
+                        travelling and studying.
+                    </p>
+
+                    <strong>— Nusrat</strong>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <div class="review-stars">⭐⭐⭐⭐</div>
+
+                    <h3>Worth the Price</h3>
+
+                    <p>
+                        Very good headphones for the price. Noise
+                        cancellation works well.
+                    </p>
+
+                    <strong>— Tanvir</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="faq" class="section faq-section">
+
+            <h2>Frequently Asked Questions</h2>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    How long does the battery last?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    The SonicPro X1 provides up to 40 hours of battery life.
+                </div>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    Does it support Bluetooth?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. It supports the latest Bluetooth 5.3 technology.
+                </div>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    Is fast charging available?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. A short charging session provides several hours
+                    of playback.
+                </div>
+
+            </div>
+
+
+            <div class="faq">
+
+                <button class="faq-question">
+                    Is there a warranty?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. The product comes with a 1-year warranty.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>SonicPro</h3>
+
+        <p>Premium audio for everyday life.</p>
+
+        <p>© 2026 SonicPro. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
